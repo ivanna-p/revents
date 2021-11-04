@@ -14,3 +14,9 @@ body {
 .ui.main.ui.container {
   margin-top: 5em;
 }
+
+.ui.menu>.ui.container, .ui.main.ui.container {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
