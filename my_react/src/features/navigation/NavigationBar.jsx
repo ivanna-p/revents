@@ -1,16 +1,17 @@
 import React from "react";
 import { Button, Container, Menu } from "semantic-ui-react";
+import { NavLink } from 'react-router-dom'
 
 export default function NavigationBar({setFormOpen}) {
     return (
         <Menu inverted ficed='top'>
             <Container>
-                <Menu.Item header>
+                <Menu.Item exact as={NavLink} to='/' header>
                     <img src="/assets/logo.png" alt='logo' style={{marginRight: 15}}/>
                 </Menu.Item>
-                <Menu.Item name='Events'/>
-                <Menu.Item>
-                    <Button onClick={() => setFormOpen(true)} positive inverted content='Create Event' />
+                <Menu.Item as={NavLink} to='/events' name='Events'/>
+                <Menu.Item  as={NavLink} to='/createEvent'>
+                    <Button positive inverted content='Create Event' />
                 </Menu.Item>
                 <Menu.Item position='right'>
                     <Button basic inverted content='Login' />
