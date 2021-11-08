@@ -3,7 +3,7 @@ import { Grid } from "semantic-ui-react";
 import EventDetailedChat from "./EventDetailedChat";
 import EventDetailedHeader from "./EventDetailedHeader";
 import EventDetailedInfo from "./EventDetailedInfo";
-import EventDetailedSidebar from "./EventDetailedSideBar";
+import EventDetailedSidebar from "./EventDetailedSidebar";
 
 export default function EventDetailedPage() {
     return (
