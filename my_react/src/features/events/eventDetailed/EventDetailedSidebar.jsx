@@ -8,7 +8,6 @@ export default function EventDetailedSidebar({ attendees }) {
                 textAlign='center'
                 style={{ border: "none" }}
                 attached='top'
-                secondary
                 inverted
                 color='teal'
             >

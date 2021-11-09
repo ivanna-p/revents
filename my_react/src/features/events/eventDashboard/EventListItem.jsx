@@ -35,7 +35,7 @@ export default function EventListItem({ event }) {
                     {event.venue}
                 </span>
             </Segment>
-            <Segment Secondary>
+            <Segment>
                 <List horizontal>
                     {event.attendees.map((attendee) => (
                         <EventListAttendee

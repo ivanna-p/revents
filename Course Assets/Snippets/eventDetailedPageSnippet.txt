@@ -187,7 +187,6 @@ EventDetailedSidebar
     textAlign="center"
     style={{border: 'none'}}
     attached="top"
-    secondary
     inverted
     color="teal"
 >

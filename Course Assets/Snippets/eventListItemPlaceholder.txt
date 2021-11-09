@@ -21,7 +21,7 @@ export default function EventListItemPlaceholder() {
                         <Placeholder.Line/>
                     </Placeholder>
                 </Segment>
-                <Segment secondary style={{minHeight: 70}}/>
+                <Segment style={{minHeight: 70}}/>
                 <Segment clearing>
                     <Button disabled color='blue' floated='right' content='View'/>
                 </Segment>
