@@ -4,9 +4,11 @@ import NavigationBar from "../../features/navigation/NavigationBar";
 import HomePage from "../../features/home/HomePage";
 import EventDetailedPage from "../../features/events/eventDetailed/EventDetailedPage";
 import EventForm from "../../features/events/eventForm/EventForm";
-import { Route } from "react-router";
+import { Route, useLocation } from "react-router";
 
 function App() {
+    const { key } = useLocation();
+
     return (
         <>
             <Route exact path='/' component={HomePage} />
@@ -25,7 +27,11 @@ function App() {
                                 path='/events/:id'
                                 component={EventDetailedPage}
                             />
-                            <Route path={['/createEvent', '/manage/:id']} component={EventForm} />
+                            <Route
+                                path={["/createEvent", "/manage/:id"]}
+                                component={EventForm}
+                                key={key}
+                            />
                         </Container>
                     </>
                 )}
