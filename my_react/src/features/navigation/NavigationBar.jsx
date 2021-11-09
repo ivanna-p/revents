@@ -14,7 +14,7 @@ export default function NavigationBar({ setFormOpen }) {
     }
 
     return (
-        <Menu inverted ficed='top'>
+        <Menu inverted fixed='top'>
             <Container>
                 <Menu.Item exact as={NavLink} to='/' header>
                     <img
