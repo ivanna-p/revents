@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Segment, Header, Form, Button } from "semantic-ui-react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { createEvent, updateEvent } from "../eventActions";
+import { createEvent, updateEvent } from "../eventActions.js";
 
 export default function EventForm({ match, history }) {
     const dispatch = useDispatch();

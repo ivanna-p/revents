@@ -5,6 +5,7 @@ import HomePage from "../../features/home/HomePage";
 import EventDetailedPage from "../../features/events/eventDetailed/EventDetailedPage";
 import EventForm from "../../features/events/eventForm/EventForm";
 import { Route, useLocation } from "react-router";
+import Sandbox from "../../features/sandbox/Sandbox";
 
 function App() {
     const { key } = useLocation();
@@ -22,6 +23,11 @@ function App() {
                                 exact
                                 path='/events'
                                 component={EventDashboard}
+                            />
+                            <Route
+                                exact
+                                path='/sandbox'
+                                component={Sandbox}
                             />
                             <Route
                                 path='/events/:id'
