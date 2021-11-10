@@ -10,6 +10,7 @@ import MyTextInput from "../../../app/common/form/MyTextInput.jsx";
 import MyTextArea from "../../../app/common/form/MytextArea.jsx";
 import MySelectInput from "../../../app/common/form/MySelectInput.jsx";
 import { categoryData } from "../../../app/api/categoryOptions.js";
+import MyDateInput from "../../../app/common/form/MyDateInput.jsx";
 
 export default function EventForm({ match, history }) {
     const dispatch = useDispatch();
@@ -71,10 +72,13 @@ export default function EventForm({ match, history }) {
                     <Header sub color='teal' content='Event Location Details' />
                     <MyTextInput name='city' placeholder='Event city' />
                     <MyTextInput name='venue' placeholder='Event venue' />
-                    <MyTextInput
+                    <MyDateInput
                         name='date'
-                        placeholder='Event date'
-                        type='date'
+                        placeholderText='Event date'
+                        timeFormat='HH:mm'
+                        showTimeSelect
+                        timeCaption='time'
+                        dateFormat='MMMM d, yyyy h:mm a'
                     />
                     <Button
                         type='submit'
